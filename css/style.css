@@ -1,4 +1,15 @@
+:root {
+    --cinza: #474646;
+    --verde: #22ba3e;
+    --vermelho: #e51212;
+    --cinza-claro: #f1f1f1;
+}
+
 .botao {
+    background-color: var(--cinza-claro);
+
+    border: none;
+    border-radius: 50%;
     font-size: 20px;
     font-weight: 700;
     margin: 1rem;
@@ -6,7 +17,15 @@
     text-align: center;
 }
 
-.botao--especial {
-    background: orange;
-    color: white;
+.botao--operador, .botao--decimal {
+    color: var(--verde);
+}
+
+.botao--igual {
+    background-color: var(--verde);
+    color: var(--cinza-claro);
+}
+
+.botao--limpa {
+    color: var(--vermelho);
 }
