@@ -3,11 +3,11 @@
     --verde: #22ba3e;
     --vermelho: #e51212;
     --cinza-claro: #f1f1f1;
+    --cinza-clique: #cccccc;
 }
 
 .botao {
     background-color: var(--cinza-claro);
-
     border: none;
     border-radius: 50%;
     font-size: 20px;
@@ -15,6 +15,11 @@
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+    cursor: pointer;
+}
+
+.botao:active {
+    background-color: var(--cinza-clique);
 }
 
 .botao--operador, .botao--decimal {
