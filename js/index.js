@@ -6,7 +6,9 @@ const operadores = document.querySelectorAll('[data-operador]');
 
 for (var i = 0; i < numeros.length; i++) {
     numeros[i].addEventListener('click', function () {
-        display.innerHTML += parseInt(this.innerHTML);
+        var numeroDigitado = parseInt(this.innerHTML);
+        display.innerHTML += numeroDigitado;
+        console.log(numeroDigitado);
     })
 }
 
@@ -15,5 +17,3 @@ for (var i = 0; i < operadores.length; i++) {
         display.innerHTML += this.innerHTML;
     })
 }
-
-console.log(display);
