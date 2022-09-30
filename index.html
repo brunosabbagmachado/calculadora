@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" nt="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/script.js" defer></script>
+</head>
 
-        <title>Calculadora</title>
-
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-
-    <body>
-
-        <div class="calculadora">
-            <div class="calculadora__display"></div>
-
-            <div class="calculadora__botoes">
-                <button class="botao" data-numero="0">0</button>  
-                <button class="botao" data-numero="1">1</button>  
-                <button class="botao" data-numero="2">2</button>  
-                <button class="botao" data-numero="3">3</button>  
-                <button class="botao" data-numero="4">4</button>  
-                <button class="botao" data-numero="5">5</button>  
-                <button class="botao" data-numero="6">6</button>  
-                <button class="botao" data-numero="7">7</button>  
-                <button class="botao" data-numero="8">8</button>  
-                <button class="botao" data-numero="9">9</button>  
-                <button class="botao botao--operador" data-operador="+">+</button>  
-                <button class="botao botao--operador" data-operador="-">-</button>  
-                <button class="botao botao--operador" data-operador="*">*</button>  
-                <button class="botao botao--operador" data-operador="/">/</button>  
-                <button class="botao botao--decimal">.</button>  
-                <button class="botao botao--limpa">C</button> 
-                <button class="botao botao--igual">=</button>
-            </div>  
+<body>
+    <div id="calculadora">
+        <h3>Calculadora</h3>
+        <div id="operacao">
+            <div id="operacao__anterior"></div>
+            <div id="operacao__atual"></div>
         </div>
-    </body>
-    <script src="./js/index.js"></script>
+
+        <div id="botoes__container">
+            <button>CE</button>
+            <button>C</button>
+            <button>DEL</button>
+            <button>/</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button>*</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button>-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button>+</button>
+            <button class="numero">0</button>
+            <button class="numero">.</button>
+            <button id="igual">=</button>
+        </div>
+    </div>
+</body>
+
 </html>
